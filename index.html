@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="es-ES">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio DavidLZ</title>
+    <link rel="stylesheet" href="styles.css" />
+    <meta property="og:title" content="Portfolio de David" />
+    <meta
+      property="og:description"
+      content="Este portfolio habla sobre un estudiantes de DAW, hablando sobre sus gustos y hobbys"
+    />
+    <!--Meter meta con imagen-->
+    <meta property="og:url" content="https://midominio.com" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Portfolio de David" />
+    <meta
+      name="twitter:description"
+      content="Este portfolio habla sobre un estudiantes de DAW, hablando sobre sus gustos y hobbys"
+    />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <!--Creamos varios inputs de type radio para poder blockear las secciones que no queremos que se vean
+y de sensación de que son varias páginas distintas.
+
+Tiene que estar fuera del main, ya que en css usaremos ~ main, lo que hace que busque la siguiente etiqueta
+pedida (main en este caso), y la etiqueta tiene que estar a la misma altura que desde donde lo estamos buscando.
+
+Ponemos el mismo nombre en todos los inputs, ya que en type radio no permite tener dos elementos del mismo nombre
+seleccionado.-->
+    <input type="radio" name="elegirSeccion" id="paginaInicio" checked />
+    <!-- Usamos checked para que sea el escogido por defecto-->
+    <input type="radio" name="elegirSeccion" id="sobreMi" />
+    <input type="radio" name="elegirSeccion" id="proyectos" />
+    <input type="radio" name="elegirSeccion" id="boxeo" />
+    <input type="radio" name="elegirSeccion" id="contacto" />
+
+    <!--En el header pondremos un nav con una lista con las diferentes secciones de la página-->
+    <header>
+      <h2 class="tituloHeader">David López Zurrón</h2>
+
+      <nav class="navHeader">
+        <ul class="seleccionarSeccion">
+          <li class="opcionSeccion">
+            <label for="paginaInicio">Inicio</label>
+          </li>
+          <li class="opcionSeccion">
+            <label for="sobreMi">Sobre Mí</label>
+          </li>
+          <li class="opcionSeccion">
+            <label for="proyectos">Proyectos</label>
+          </li>
+          <li class="opcionSeccion">
+            <label for="boxeo">Boxeo</label>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="seccionInicio">
+        <!-- video de fondo-->
+        <video autoplay muted loop playsinline class="videoFondo">
+          <source src="./assets/vd/fondoInicio.mp4" type="video/mp4" />
+        </video>
+        <h1 class="titulo">Bienvenido al portfolio de David</h1>
+        <p class="subtitulo">Desarrollador fullstack</p>
+      </section>
+
+      <section id="seccionSobreMi">
+        <!-- video de fondo-->
+        <video autoplay muted loop playsinline class="videoFondo">
+          <source src="./assets/vd/fondoSobreMi.mp4" type="video/mp4" />
+        </video>
+
+        <div class="preguntasSobreMi">
+          <h2>¿Quién soy?</h2>
+          <p>
+            Soy David López Zurrón, actual estudiante de una FP de DAW en
+            Prometeo. Nací en Madrid el 9 de abril de 2007. Tengo familia en
+            muchos lugares de España, desde Galicia hasta Sevilla.
+          </p>
+
+          <p>
+            Tengo un pueblo llamado Pedralba de la Pradería, donde nació mi
+            abuela materna y al que suelo ir a veranear todos los años.
+          </p>
+
+          <p>
+            Antes de estudiar en Prometeo, estudié en el colegio-instituto
+            Nuestra Señora de las Nieves, en Canillejas, el barrio en el que me
+            crié y crecí hasta mudarme a mi casa actual, en El Cañaveral. Es una
+            zona bastante nueva, con poca gente y poco comercio, pero también
+            muy tranquila, algo que personalmente valoro mucho.
+          </p>
+        </div>
+
+        <div class="preguntasSobreMi">
+          <h2>¿Cuándo empezó mi pasión por la programación?</h2>
+          <p>
+            Aproximadamente a los 11 o 12 años. Recuerdo hacer un trabajo en
+            Scratch y otro en HTML (muy básico) y quedarme fascinado por todas
+            las posibilidades que ofrecían. Esa capacidad de dar rienda suelta a
+            mi imaginación fue lo que más despertó mi interés, y los retos que
+            suponía resolver problemas se convirtieron en un entretenimiento más
+            del que disfrutaba.
+          </p>
+
+          <p>
+            Además, siempre me han interesado mucho las ciencias y, como la
+            programación es bastante lógica, tuve claro desde ese momento que
+            quería dedicarme a ello. Sin duda, he tomado la decisión correcta,
+            porque me encanta fallar, aprender, mejorar y repetir ese ciclo una
+            y otra vez.
+          </p>
+        </div>
+
+        <div class="preguntasSobreMi">
+          <h2>¿Qué <span lang="en">hobbies</span> tengo?</h2>
+          <p>
+            Una de mis mayores aficiones es el boxeo. Lo practico desde 2021 y,
+            sin duda, ha sido una de las mejores decisiones que he tomado. Es un
+            deporte que me aporta tranquilidad, seguridad, un buen estado físico
+            y una forma de desconectar y recargar energía (mentalmente, claro).
+          </p>
+          <p>
+            La última sección estará dedicada a algunos vídeos míos entrenando y
+            boxeando; te recomiendo que les eches un vistazo. En mi Instagram
+            también puedes encontrarlos 😉
+          </p>
+          <p>
+            Y, al igual que muchas personas, disfruto mucho de los videojuegos,
+            sin importar el género: MMO, metroidvanias, mundos abiertos (open
+            world) o modos de juego como JcJ y TvT. Algunos de mis favoritos son
+            Hollow Knight, Hollow Knight: Silksong, Fortnite, League of Legends
+            (LoL), Valorant, Dying Light y Genshin Impact.
+          </p>
+        </div>
+      </section>
+
+      <section id="seccionProyectos">
+        <h2>¡Pulsa uno de los proyectos para descargar el .zip del código!</h2>
+        <button class="prev">‹</button>
+        <div class="carousel">
+          <article class="slide">
+            <h3 class="nombreEncimaProyecto">Calculadora básica</h3>
+            <a
+              href="./assets/docs/AntonioApruebame.txt"
+              download="AntonioApruebame.txt"
+            >
+              <img src="./assets/img/Calculadora.jpg" alt="Proyecto 1" />
+            </a>
+          </article>
+
+          <article class="slide">
+            <h3 class="nombreEncimaProyecto">Software para cafeteras</h3>
+            <a
+              href="./assets/docs/AntonioApruebame.txt"
+              download="AntonioApruebame.txt"
+            >
+              <img src="./assets/img/Cafetera.jpg" alt="Proyecto 2" />
+            </a>
+          </article>
+
+          <article class="slide">
+            <h3 class="nombreEncimaProyecto">Aplicacion de recetas</h3>
+            <a
+              href="./assets/docs/AntonioApruebame.txt"
+              download="AntonioApruebame.txt"
+            >
+              <img src="./assets/img/Recetas.jpg" alt="Proyecto 3" />
+            </a>
+          </article>
+
+          <article class="slide">
+            <h3 class="nombreEncimaProyecto">Apuntes JAVA</h3>
+            <a
+              href="./assets/docs/AntonioApruebame.txt"
+              download="AntonioApruebame.txt"
+            >
+              <img src="./assets/img/java.jpg" alt="Proyecto 3" />
+            </a>
+          </article>
+        </div>
+        <button class="next">›</button>
+      </section>
+
+      <section id="seccionBoxeo">
+        <h2>
+          Llevo desde 2022 practicando boxeo en un club llamado Club Boxeo
+          Kronos, y es sin duda el mejor club en el que he podido acabar.
+        </h2>
+        <p>
+          Por si os interesa, os dejo algunos videos de mí mismo haciendo unas
+          series, ¡espero que os gusten!
+        </p>
+        <ul class="listaVideos">
+          <li>
+            <video controls preload="metadata" class="videosBoxeo">
+              <source src="assets/vd/Series/Serie%201.mp4" type="video/mp4" />
+              Tu navegador no soporta el vídeo.
+            </video>
+          </li>
+
+          <li>
+            <video controls preload="metadata" class="videosBoxeo">
+              <source src="assets/vd/Series/Serie%202.mp4" type="video/mp4" />
+            </video>
+          </li>
+
+          <li>
+            <video controls preload="metadata" class="videosBoxeo">
+              <source src="assets/vd/Series/Serie%203.mp4" type="video/mp4" />
+            </video>
+          </li>
+
+          <li>
+            <video controls preload="metadata" class="videosBoxeo">
+              <source src="assets/vd/Series/Serie%204.mp4" type="video/mp4" />
+            </video>
+          </li>
+
+          <li>
+            <video controls preload="metadata" class="videosBoxeo">
+              <source src="assets/vd/Series/Serie%205.mp4" type="video/mp4" />
+            </video>
+          </li>
+
+          <li>
+            <video controls preload="metadata" class="videosBoxeo">
+              <source src="assets/vd/Series/Serie%206.mp4" type="video/mp4" />
+            </video>
+          </li>
+        </ul>
+      </section>
+
+      <section id="seccionContacto">
+        <h2>
+          Rellene el formulario o escriba un correo a
+          <a
+            href="mailto:davidlopezzurron@gmail.com?subject=Contacto%20Portfolio&body=Escríbeme%20sobre%20lo%20que%20quieras%20aquí."
+            >davidlopezzurron@gmail.com</a
+          >
+        </h2>
+        <form class="formulario">
+          <label for="nombre">Introduzca su nombre</label>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            placeholder="Nombre completo"
+            required
+          />
+
+          <label for="email">Introduzca su email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="correo@ejemplo.com"
+            required
+          />
+
+          <label for="mensaje">Introduzca el cuerpo del mensaje</label>
+          <textarea
+            id="mensaje"
+            name="mensaje"
+            placeholder="Escriba su mensaje aquí (máx: 1000 caracteres)"
+            maxlength="1000"
+            required
+          ></textarea>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <nav class="redes">
+        <ul>
+          <li>
+            <a
+              href="https://github.com/David-Dama"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub de David"
+            >
+              <img
+                alt="GitHub"
+                src="assets/img/github.png"
+                class="imagenesRedes"
+              />
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://www.instagram.com/david.dama_?igsh=MWRtcjhib3liaHFxNQ=="
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram de David"
+            >
+              <img
+                alt="Instagram"
+                src="assets/img/instagram.png"
+                class="imagenesRedes"
+              />
+            </a>
+          </li>
+
+          <li>
+            <a
+              aria-label="X de David"
+              href="https://x.com/DavidZurron"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <img
+                alt="X / Twitter"
+                src="assets/img/x.jpg"
+                class="imagenesRedes"
+              />
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://www.tiktok.com/@david.dama_?_r=1&_t=ZN-93OJ8iuFHWB"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="TikTok de David"
+            >
+              <img
+                alt="TikTok"
+                src="assets/img/tik-tok.png"
+                class="imagenesRedes"
+              />
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="contacto">
+        <label for="contacto">Contacta conmigo</label>
+      </div>
+
+      <div class="copyright">
+        <p>© Portfolio de David López Zurrón</p>
+      </div>
+    </footer>
+  </body>
+</html>
